@@ -1,0 +1,36 @@
+.card, .card-body {
+    margin-bottom: 25px;
+}
+
+.todo-text, .todo-1, .todo-text1, .todo-text2, .exp1-title, .text-exp {
+    color: blueviolet;
+}
+
+.todo-text, .exp1-title, .exp1-img {
+    margin-top: 30px;
+}
+
+.exp1-title {
+    text-align: center;
+}
+
+.img-1, .exp2-img {
+    margin-top: 13px;
+}
+
+.todo-1 {
+    text-align: center;
+    margin-bottom: 30px !important;
+}
+
+.text-exp, .card-2, .exp2-img {
+    padding: 30px;
+}
+
+.expT {
+    padding: 22px;
+}
+
+.to-L {
+    text-align: center;
+}
