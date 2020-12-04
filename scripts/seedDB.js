@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const db = require("../models/pets");
+const db = require("../models/indexP");
 
 // Empty the pets collection and inserts the pets attrbs below
 mongoose.connect(
