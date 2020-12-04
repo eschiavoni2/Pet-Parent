@@ -1,12 +1,14 @@
 const mongoose = require("mongoose");
-const db = require("../models/indexP");
+const db = require("../models/index");
 
 // Empty the pets collection and inserts the pets attrbs below
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/pets", {
-    useNewUrlParser: true,
-    useFindAndModify: false
-  });
+// mongoose.connect(
+//   process.env.MONGODB_URI || "mongodb://localhost/pets", {
+//     useNewUrlParser: true,
+//     useFindAndModify: false
+//   });
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mern_authenticate_me', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const petProfileSeed = [
   {

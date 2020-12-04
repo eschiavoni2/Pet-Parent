@@ -48,15 +48,6 @@ app.use(function (req, res, next) {
   next(err);
 });
 
-/* === Server-Side Authentication w/passport.js on our Model === */
-const Account = require('./models/account');
-passport.use(new LocalStrategy(Account.authenticate()));
-passport.serializeUser(Account.serializeUser());
-passport.deserializeUser(Account.deserializeUser());
-
-/* === Mongoose Connection === */
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mern_authenticate_me', { useNewUrlParser: true, useUnifiedTopology: true });
-
 /* === Error Handling === */
 
 /* Development error handler will print stacktrace */
@@ -80,13 +71,22 @@ app.use(function (err, req, res, next) {
 });
 
 // Connect to Mongo DB
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/pets",
-  {
-    useCreateIndex: true,
-    useNewUrlParser: true
-  }
-);
+// mongoose.connect(
+//   process.env.MONGODB_URI || "mongodb://localhost/pets",
+//   {
+//     useCreateIndex: true,
+//     useNewUrlParser: true
+//   }
+// );
+
+/* === Server-Side Authentication w/passport.js on our Model === */
+const Account = require('./models/account');
+passport.use(new LocalStrategy(Account.authenticate()));
+passport.serializeUser(Account.serializeUser());
+passport.deserializeUser(Account.deserializeUser());
+
+/* === Mongoose Connection === */
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mern_authenticate_me', { useNewUrlParser: true, useUnifiedTopology: true });
 
 /* === Telling Express to Listen === */
 app.listen(PORT, function () {

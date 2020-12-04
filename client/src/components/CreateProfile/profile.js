@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useStoreContext } from "../utils/GlobalState";
-import { ADD_POST, LOADING } from "../utils/actions";
+import { LOADING } from "../utils/actions";
 import API from "../utils/API";
 import "./style.css";
 import { Card } from 'reactstrap';
@@ -39,10 +39,10 @@ function CreateProfile() {
       .then(result => {
         console.log("result", result)
         window.location.replace("/Profile") 
-        dispatch({
-          type: ADD_POST,
-          post: result.data
-        });
+        // dispatch({
+        //   type: ADD_POST,
+        //   post: result.data
+        // });
       })
       .catch(err => console.log(err));
 
