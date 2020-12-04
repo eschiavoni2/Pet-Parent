@@ -39,10 +39,10 @@ function CreateProfile() {
       .then(result => {
         console.log("result", result)
         window.location.replace("/Profile") 
-        // dispatch({
-        //   type: ADD_POST,
-        //   post: result.data
-        // });
+        dispatch({
+          type: ADD_POST,
+          post: result.data
+        });
       })
       .catch(err => console.log(err));
 
