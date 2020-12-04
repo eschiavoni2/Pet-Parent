@@ -1,60 +1,60 @@
-import React, { useState } from 'react';
-import "./style.css";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
+// import React, { useState } from 'react';
+// import "./style.css";
+// import {
+//   Collapse,
+//   Navbar,
+//   NavbarToggler,
+//   NavbarBrand,
+//   Nav,
+//   NavItem,
+//   NavLink,
+//   UncontrolledDropdown,
+//   DropdownToggle,
+//   DropdownMenu,
+//   DropdownItem,
+//   NavbarText
+// } from 'reactstrap';
 
-const navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+// const NavBar = () => {
+//   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
+//   const toggle = () => setIsOpen(!isOpen);
 
-  return (
-      <Navbar expand="md" className="navB">
-        <NavbarBrand href="/">Home</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/profile">Profile</NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-              <i className="fas fa-bars"></i>
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                <NavLink href="/login">Login</NavLink>
-                </DropdownItem>
-                <DropdownItem>
-                <NavLink href="/signup">Sign up</NavLink>
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <NavbarText>
-          <i className="fas fa-paw"></i>
-            Pet Pals
-          <i className="fas fa-paw"></i>
-          </NavbarText>
-        </Collapse>
-      </Navbar>
-  );
-}
+//   return (
+//       <Navbar expand="md" className="navB">
+//         <NavbarBrand href="/">Home</NavbarBrand>
+//         <NavbarToggler onClick={toggle} />
+//         <Collapse isOpen={isOpen} navbar>
+//           <Nav className="mr-auto" navbar>
+//             <NavItem>
+//               <NavLink href="/profile">Profile</NavLink>
+//             </NavItem>
+//             <UncontrolledDropdown nav inNavbar>
+//               <DropdownToggle nav caret>
+//               <i className="fas fa-bars"></i>
+//               </DropdownToggle>
+//               <DropdownMenu right>
+//                 <DropdownItem>
+//                 <NavLink href="/login">Login</NavLink>
+//                 </DropdownItem>
+//                 <DropdownItem>
+//                 <NavLink href="/signup">Sign up</NavLink>
+//                 </DropdownItem>
+//                 <DropdownItem divider />
+//                 <DropdownItem>
+//                   Reset
+//                 </DropdownItem>
+//               </DropdownMenu>
+//             </UncontrolledDropdown>
+//           </Nav>
+//           <NavbarText>
+//           <i className="fas fa-paw"></i>
+//             Pet Pals
+//           <i className="fas fa-paw"></i>
+//           </NavbarText>
+//         </Collapse>
+//       </Navbar>
+//   );
+// }
 
-export default navbar;
+// export default NavBar;

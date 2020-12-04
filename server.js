@@ -79,6 +79,14 @@ app.use(function (err, req, res, next) {
   });
 });
 
+// Connect to Mongo DB
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/pets",
+  {
+    useCreateIndex: true,
+    useNewUrlParser: true
+  }
+);
 
 /* === Telling Express to Listen === */
 app.listen(PORT, function () {

@@ -14,22 +14,33 @@ import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import './App.css';
 import { UserProvider } from "./utils/UserContext";
+import Home from './pages/PublicRoute/Home';
+import Profile from './pages/ProtectedRoute/Profile';
+import { StoreProvider } from "../src/components/utils/GlobalState";
+// import Nav from "../src/components/Nav/index";
+import Footer from "../src/components/Footer/footer";
 
 //Now we have all the stuff we need .. let's render some components with the Router
 const AuthExample = () => (
 	<UserProvider>
 		<Router>
 			<div>
-				<Nav className="App-header" />
-				<Container>
-					<Switch>
-						<Route path="/public" component={PublicRoute} />
-						<Route path="/login" component={Login} />
-						<Route path="/register" component={Register} />
-						<PrivateRoute path="/protected" component={ProtectedRoute} />
-						{/* <Route component={NoMatch} /> */}
-					</Switch>
-				</Container>
+				<StoreProvider>
+				{/* <Nav /> */}
+					<Nav className="App-header" />
+					<Container>
+						<Switch>
+							<Route exact path="/" component={Home} />
+							<Route path="/public" component={PublicRoute} />
+							<Route path="/login" component={Login} />
+							<Route path="/register" component={Register} />
+							<PrivateRoute path="/profilepage" component={ProtectedRoute} />
+							<Route exact path="/profile" component={Profile} />
+							{/* <Route component={NoMatch} /> */}
+						</Switch>
+					</Container>
+					<Footer />
+				</StoreProvider>
 			</div>
 		</Router>
 	</UserProvider>

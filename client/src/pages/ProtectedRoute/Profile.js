@@ -6,6 +6,7 @@ import { REMOVE_POST, UPDATE_POSTS, LOADING } from "../../components/utils/actio
 import API from "../../components/utils/API";
 import CreateProfile from "../../components/CreateProfile/profile";
 import TodoApp from "../../components/TodoApp/todo";
+import "../style.css";
 import {
     Card
 } from 'reactstrap';
@@ -25,19 +26,20 @@ function Profile() {
             .catch(err => console.log(err));
     };
 
-    const getProfiles = () => {
-        dispatch({ type: LOADING });
-        API.getProfiles()
-            .then(results => {
-                dispatch({
-                    type: UPDATE_POSTS,
-                    posts: results.data
-                });
-            })
-            .catch(err => console.log(err));
-    };
+    
 
     useEffect(() => {
+        const getProfiles = () => {
+            dispatch({ type: LOADING });
+            API.getProfiles()
+                .then(results => {
+                    dispatch({
+                        type: UPDATE_POSTS,
+                        posts: results.data
+                    });
+                })
+                .catch(err => console.log(err));
+        };
         getProfiles();
     }, []);
 

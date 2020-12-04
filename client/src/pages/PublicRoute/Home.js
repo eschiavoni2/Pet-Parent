@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, CardBody, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
+import { Container, Row, Col, Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap';
 import Jumbo from "../../components/Jumbo/jumbotron";
 import "../style.css";
 

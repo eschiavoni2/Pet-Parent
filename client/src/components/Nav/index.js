@@ -16,18 +16,19 @@ function Nav() {
   const [open, setOpen] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
 
-  const updateWidth = () => {
-    if (open && width > 991) {
-      setOpen(false);
-    }
-    setWidth(window.innerWidth)
-  };
 
   // const toggleNav = () => {
   //   setOpen(!open);
   // };
 
   useEffect(() => {
+
+    const updateWidth = () => {
+      if (open && width > 991) {
+        setOpen(false);
+      }
+      setWidth(window.innerWidth)
+    };
 
     window.addEventListener("resize", updateWidth);
 
@@ -47,7 +48,7 @@ function Nav() {
         <ul className="navbar-nav ml-auto">
           <li className="nav-item ">
             <Link style={buttonStyle} className=" btn btn-secondary" to="/public">Public Page</Link>
-            <Link style={buttonStyle} className="btn btn-danger" to="/protected">Protected Page</Link>
+            <Link style={buttonStyle} className="btn btn-danger" to="/profilepage">Profile</Link>
             {user.username ? "" :
               <Link style={buttonStyle} className="btn btn-warning" to="/register">Register a New User</Link>
             }
