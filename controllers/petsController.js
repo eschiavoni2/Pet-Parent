@@ -1,4 +1,4 @@
-const db = require("../models/pets");
+const db = require("../models");
 
 // Defining methods for the PetsController
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function (req, res) {
-    console.log("got here")
+    console.log(req.body)
     db.Pet
       .create(req.body)
       .then(dbModel => res.json(dbModel))
