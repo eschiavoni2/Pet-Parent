@@ -3,6 +3,7 @@ import DeleteBtn from "../DeleteBtn";
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import { Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle } from "reactstrap";
 
 
 function PetCard(props) {
@@ -14,63 +15,27 @@ function PetCard(props) {
             <List>
                 {props.posts.map(post => (
                     <ListItem key={post._id}>
-                        <div className="title">
-                        <h1 className="pPal">Pet Pal</h1>
-                        </div>
-                        <div className="row">
-                        <div className="col-md-6">
-                        <img className="img-fluid img-thumbnail"
-                        src="../assets/images/pets.png"
-                        alt="placeholder"
-                        />
-                        </div>
-                        <div className="col-md-6 ppCard">
-                                <h5 className="mt-5">
-                                    <strong>
+                            <Card>
+                            <CardImg src="../assets/images/pets.png" alt="placeholder" />
+                            <CardBody>
+                                <CardTitle tag="h5">Pet Pal</CardTitle>
+                                <CardSubtitle tag="h6" className="mb-2 text-muted">
                                         Name:
                                         {" "}
-                                    </strong> 
                                     {post.name}
-                                </h5>
-                                <br />
-                                <p id="profP">
-                                    <strong>
-                                        Age: {""}
-                                    </strong> 
-                                    {post.age} {""}
-                                    <strong>
-                                        Gender: {""}
-                                    </strong> 
-                                    {post.gender}
-                                </p>
-                                <p id="profP">
-                                    <strong>
-                                    Species: {""} 
-                                    </strong>
-                                    {post.species} {""}
-                                    <strong>
-                                    Breed: {""} 
-                                    </strong>
-                                    {post.breed}
-                                </p>
-                                <p id="profP">
-                                    <strong>
-                                    Microchip: {""} 
-                                    </strong>
-                                    {post.microchip} {""}
-                                    <strong>
-                                    Weight: {""} 
-                                    </strong>
-                                    {post.weight}</p>
-                                <p id="profP">
-                                    <strong>
-                                    Location: {""}
-                                    </strong>
-                                    {post.location}
-                                </p>
-                            </div>
-                            </div>
+                                    </CardSubtitle>
+                                <CardText>
+                                Age: {""} {post.age} {""}
+                                Gender: {""} {post.gender} {""}
+                                Species: {""} {post.species} {""}
+                                Breed: {""} {post.breed} {""}
+                                Microchip: {""} {post.microchip} {""}
+                                Weight: {""} {post.weight} {""}
+                                Location: {""} {post.location} {""}
+                                </CardText>
                         <DeleteBtn onClick={() => props.removePost(post._id)} />
+                        </CardBody>
+                        </Card>                        
                     </ListItem>
                     
 

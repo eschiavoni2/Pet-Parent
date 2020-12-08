@@ -38,3 +38,7 @@
 .color {
     width: 100% !important;
 }
+
+.col-sm-6 {
+    width: 500px !important;
+}

@@ -46,22 +46,14 @@ function Profile() {
 
     return (
         <div className="row">
-            <div className="col">
-                <Card className="ml-1">
+            <div>
                     <PetCard removePost={removePost} posts={state.posts} />
-                </Card>
-                <Card className="ml-1">
                     <CreateProfile />
-                </Card>
             </div>
-            <div className="col">
-                {/* <Card className="mr-3"> */}
+            <div>
                     <Expenses />
-                {/* </Card> */}
-                <Card className="mr-1">
                     <h1 className="to-L">To do List</h1>
                     <TodoApp />
-                </Card>
             </div>
         </div>
 

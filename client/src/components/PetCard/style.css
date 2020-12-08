@@ -25,7 +25,6 @@
 
 .img-fluid {
     margin-left: 15px;
-    border: thick solid #B7B9B8 !important;
     width: 375px;
     margin-top: 20px;
 }
@@ -33,4 +32,8 @@
 .pPal {
     color: charcoal;
     text-align: center;
+}
+
+.card-img {
+    width: 500px !important;
 }
