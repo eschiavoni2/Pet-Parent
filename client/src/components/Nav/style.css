@@ -1,3 +1,11 @@
 .navbar {
   border-radius: 0;
+  height: 70px;
 }
+
+.home, .signup, .profile {
+  padding: 10px;
+}
+
+
+

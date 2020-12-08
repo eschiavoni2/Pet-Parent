@@ -20,6 +20,7 @@ html {
     justify-content: right;
     margin-top: 15px;
     color: #ddb4ff;
+    z-index: 1;
 }
 .fa-2x:hover {
     color:  #ecd7fd;

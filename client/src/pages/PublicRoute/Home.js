@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Row, Col, Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap';
 import Jumbo from "../../components/Jumbo/jumbotron";
-import "../style.css";
+import "../../pages/style.css"
 
 function Home() {
   return (
-    <div>
+    <>
       <Jumbo />
     <Container>
       <Row lg="2">
@@ -48,7 +48,7 @@ function Home() {
         </Col>
         </Row>
     </Container>
-    </div>
+    </>
   );
 }
 

@@ -2,8 +2,7 @@ import { ListItem, List } from "../List";
 import DeleteBtn from "../DeleteBtn";
 import React from "react";
 import "./style.css";
-
-// import { Card } from 'reactstrap';
+import { Link } from "react-router-dom";
 
 
 function PetCard(props) {
@@ -81,8 +80,10 @@ function PetCard(props) {
             </List>
           
      ) : (
-        
+            <div>
             <h3 className="noPet">You haven't added any pets yet!</h3>
+            <Link to="/createprofile">Add Pet</Link>
+            </div>
       )}
         </div>
     

@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import Auth from "../../utils/Auth";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../utils/UserContext";
+import "./style.css"
 
 const AuthButton = () => {
 	console.log("NAV", Auth.isAuthenticated);
@@ -12,7 +13,7 @@ const AuthButton = () => {
 
 	return (
 		Auth.isAuthenticated ? (
-			<button className="btn btn-danger"
+			<Link 
 				onClick={() => {
 					Auth.signout(() => history.push('/login'))
 					dispatch({
@@ -21,10 +22,10 @@ const AuthButton = () => {
 					})
 				}}>
 				Logout
-			</button>
+			</Link>
 		) : (
 				<Link
-					className="btn btn-success"
+					className="login"
 					to="/login"
 				>Login
 				</Link>

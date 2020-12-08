@@ -55,9 +55,9 @@ function Profile() {
                 </Card>
             </div>
             <div className="col">
-                {/* <Card className="mr-3"> */}
+                <Card className="mr-3">
                     <Expenses />
-                {/* </Card> */}
+                </Card>
                 <Card className="mr-1">
                     <h1 className="to-L">To do List</h1>
                     <TodoApp />

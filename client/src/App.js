@@ -17,7 +17,7 @@ import { UserProvider } from "./utils/UserContext";
 import Home from './pages/PublicRoute/Home';
 import Profile from './pages/ProtectedRoute/Profile';
 import { StoreProvider } from "../src/components/utils/GlobalState";
-// import Nav from "../src/components/Nav/index";
+import CreateProfile from "../src/components/CreateProfile/profile";
 import Footer from "../src/components/Footer/footer";
 
 //Now we have all the stuff we need .. let's render some components with the Router
@@ -30,6 +30,7 @@ const AuthExample = () => (
 					<Nav className="App-header" />
 					<Container>
 						<Switch>
+							<Route exact path ="/createprofile" component={CreateProfile} />
 							<Route exact path="/" component={Home} />
 							<Route path="/public" component={PublicRoute} />
 							<Route path="/login" component={Login} />
@@ -59,7 +60,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 				Auth.isAuthenticated ? (
 					<Component {...props} />
 				) : (
-						<div className="container">
+						<div>
 							<div className="alert alert-danger text-center" role="alert">
 								This page is private to authenticated users.
 					</div>
