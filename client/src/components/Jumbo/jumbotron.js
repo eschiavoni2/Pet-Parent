@@ -4,8 +4,7 @@ import "./style.css";
 
 function Jumbo() {
   return (
-    
-    <Jumbotron>
+    <Jumbotron id="jumbo">
       <div>
         <h1 className="display-3">Welcome to Pet Pals!</h1>
         <p className="lead">Start tracking your pet today!</p>
@@ -15,7 +14,6 @@ function Jumbo() {
         </p>
       </div>
     </Jumbotron>
-
   );
 };
 

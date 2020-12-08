@@ -57,14 +57,7 @@ function CreateProfile() {
   };
 // Form and submit
   return (
-<Card className="petForm">      {/* to add tracker/budget render it here like below with navbar*/}
-      {/* <div className="jumbotron">
-        <img
-          className="img-fluid img-thumbnail"
-          src="https://via.placeholder.com/300"
-          alt="placeholder"
-        />
-      </div> */}
+<Card className="petForm">      
       <h1 className="mt-3">Add your Pet</h1>
       
       <form className="form-group mt-5 mb-1" onSubmit={handleSubmit}>

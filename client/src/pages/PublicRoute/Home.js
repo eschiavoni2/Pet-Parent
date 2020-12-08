@@ -5,7 +5,7 @@ import "../../pages/style.css"
 
 function Home() {
   return (
-    <>
+    <div>
       <Jumbo />
     <Container>
       <Row lg="2">
@@ -48,7 +48,7 @@ function Home() {
         </Col>
         </Row>
     </Container>
-    </>
+    </div>
   );
 }
 

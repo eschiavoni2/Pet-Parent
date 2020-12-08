@@ -9,7 +9,7 @@ import Auth from "./utils/Auth";
 import Nav from "./components/Nav";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import { Container } from "./components/Grid";
+// import { Container } from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import './App.css';
@@ -28,7 +28,7 @@ const AuthExample = () => (
 				<StoreProvider>
 				{/* <Nav /> */}
 					<Nav className="App-header" />
-					<Container>
+					{/* <Container> */}
 						<Switch>
 							<Route exact path ="/createprofile" component={CreateProfile} />
 							<Route exact path="/" component={Home} />
@@ -39,7 +39,7 @@ const AuthExample = () => (
 							<Route exact path="/profile" component={Profile} />
 							{/* <Route component={NoMatch} /> */}
 						</Switch>
-					</Container>
+					{/* </Container> */}
 					<Footer />
 				</StoreProvider>
 			</div>
