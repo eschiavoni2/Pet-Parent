@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
+import { Container } from 'reactstrap';
 import Card from "../Card"
+import "./style.css"
 
 function LoginForm({ onLogin }) {
 
@@ -8,7 +10,8 @@ function LoginForm({ onLogin }) {
 	const passwordRef = useRef();
 
 	return (
-		<Card title="Login with your Username and Password">
+		<Container className="col-md-5">
+		<Card id="loginP" title="Login with your Username and Password">
 			<form
 				ref={formRef}
 				onSubmit={(e) => {
@@ -22,12 +25,13 @@ function LoginForm({ onLogin }) {
 				<div className="form-group">
 					<input className="form-control" ref={userNameRef} type='text' name="username" placeholder='Enter Username' /><br />
 					<input className="form-control" ref={passwordRef} type='password' name="password" placeholder='Password' /><br />
-					<button className="btn btn-success" type='submit'>
+					<button style={{textAlign: 'center'}} className="btn btn-success" id="submit" type='submit'>
 						Submit
 						</button>
 				</div>
 			</form>
 		</Card>
+		</Container>
 	)
 }
 

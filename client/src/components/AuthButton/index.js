@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../../utils/UserContext";
 import "./style.css"
 
+// login authentication button
 const AuthButton = () => {
 	console.log("NAV", Auth.isAuthenticated);
 

@@ -7,6 +7,7 @@ import API from "../../components/utils/API";
 import CreateProfile from "../../components/CreateProfile/profile";
 import TodoApp from "../../components/TodoApp/todo";
 import "../style.css";
+import Jumbo from "../../components/Jumbo/jumbotron";
 // import {
 //     Card
 // } from 'reactstrap';
@@ -45,17 +46,27 @@ function Profile() {
 
 
     return (
-        <div className="row">
+        <div>
+        <Jumbo />
+        <div className="container">
+            <div className="row">
+            <div className="col">
+
             <div>
                     <PetCard removePost={removePost} posts={state.posts} />
                     <CreateProfile />
             </div>
+            </div>
+            <div className="col">
+
             <div>
                     <Expenses />
                     <TodoApp />
+            </div>        
+            </div>
             </div>
         </div>
-
+        </div>
     );
 };
 
