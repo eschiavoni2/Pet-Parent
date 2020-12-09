@@ -7,9 +7,9 @@ import API from "../../components/utils/API";
 import CreateProfile from "../../components/CreateProfile/profile";
 import TodoApp from "../../components/TodoApp/todo";
 import "../style.css";
-import {
-    Card
-} from 'reactstrap';
+// import {
+//     Card
+// } from 'reactstrap';
 
 function Profile() {
 
