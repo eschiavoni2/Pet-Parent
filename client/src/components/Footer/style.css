@@ -7,20 +7,19 @@ html {
 .footer {
     height: 60px;
     background-color: #3B0273;
-    /* text-align: center;
+    text-align: center;
     position: fixed;
     width:100%;
     display: block;
     bottom: 0 !important;
     padding: 20px;
     line-height: 60px;
-    height: 60px; */
+    height: 60px;
 }
-.fa-2x {
-    justify-content: right;
-    margin-top: 15px;
+.petfinder, .adoptapet {
     color: #ddb4ff;
     z-index: 1;
+    padding: 10px;
 }
 .fa-2x:hover {
     color:  #ecd7fd;
