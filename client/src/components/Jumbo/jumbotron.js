@@ -10,7 +10,7 @@ function Jumbo() {
         <p className="lead">Start tracking your pet today!</p>
         <br className="my-2" />
         <p className="lead">
-          <Button className="btn" href="/Signup">Sign up here!</Button>
+          <Button className="btn" href="/register">Sign up here!</Button>
         </p>
       </div>
     </Jumbotron>

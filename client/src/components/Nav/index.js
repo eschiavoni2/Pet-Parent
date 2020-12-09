@@ -42,14 +42,14 @@ function Nav() {
 
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg" id="navbar">
       <Link className="navbar-brand" to="/">
         Pet Pals
         </Link>
         <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-        <i className="fas fa-bars"></i>
-        </DropdownToggle>
+              {/* <DropdownToggle nav caret> */}
+        {/* <i className="fas fa-bars"></i> */}
+        {/* </DropdownToggle> */}
 
         <DropdownMenu right>
                 <DropdownItem>
