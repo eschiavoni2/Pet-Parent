@@ -52,7 +52,6 @@ function Profile() {
             </div>
             <div>
                     <Expenses />
-                    <h1 className="to-L">To do List</h1>
                     <TodoApp />
             </div>
         </div>

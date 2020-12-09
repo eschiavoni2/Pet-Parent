@@ -14,10 +14,10 @@ const Form = ({ name, amount, handleName, handleAmount, handleSubmitForm, handle
 }) => (
   <BTForm className="row1" style={{ margin: 10 }} onSubmit={handleSubmitForm}>
     <FormGroup className="row">
-      <Label for="Expense" sm={2}>
+      <Label for="Expense" sm={3}>
         Expense
       </Label>
-      <Col md={5}>
+      <Col md={6}>
         <Input
           type="text"
           name="name"
@@ -29,10 +29,10 @@ const Form = ({ name, amount, handleName, handleAmount, handleSubmitForm, handle
       </Col>
     </FormGroup>
     <FormGroup className="row">
-      <Label for="exampleEmail" sm={2}>
+      <Label for="exampleEmail" sm={3}>
         $ Amount
       </Label>
-      <Col md={5}>
+      <Col md={6}>
         <Input
           type="number"
           name="amount"
