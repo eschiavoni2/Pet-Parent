@@ -25,6 +25,9 @@ function TodoForm(props) {
     };
 
     return (
+        <>
+        <h1>To Do List</h1>
+
         <form className="todo-form" onSubmit={handleSubmit}>
             {props.edit ? (
                 <>
@@ -64,6 +67,7 @@ function TodoForm(props) {
             }
             
         </form>
+        </>
     );
 }
 
