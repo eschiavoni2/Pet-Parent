@@ -4,13 +4,10 @@ import { useStoreContext } from "../../components/utils/GlobalState";
 import React, { useEffect } from "react";
 import { REMOVE_POST, UPDATE_POSTS, LOADING } from "../../components/utils/actions";
 import API from "../../components/utils/API";
-import CreateProfile from "../../components/CreateProfile/profile";
 import TodoApp from "../../components/TodoApp/todo";
 import "../style.css";
 import Jumbo from "../../components/Jumbo/jumbotron";
-// import {
-//     Card
-// } from 'reactstrap';
+
 
 function Profile() {
 
@@ -54,7 +51,6 @@ function Profile() {
 
             <div>
                     <PetCard removePost={removePost} posts={state.posts} />
-                    <CreateProfile />
             </div>
             </div>
             <div className="col">

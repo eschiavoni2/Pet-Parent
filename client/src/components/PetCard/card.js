@@ -47,7 +47,6 @@ function PetCard(props) {
      ) : (
             <div>
             <h3 className="noPet">You haven't added any pets yet!</h3>
-            <Link to="/createprofile">Add Pet</Link>
             </div>
       )}
         </div>

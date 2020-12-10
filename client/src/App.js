@@ -3,7 +3,8 @@ import {
 	BrowserRouter as Router,
 	Route,
 	Redirect,
-	Switch
+	Switch,
+	Link
 } from 'react-router-dom';
 import Auth from "./utils/Auth";
 import Nav from "./components/Nav";
@@ -17,7 +18,7 @@ import { UserProvider } from "./utils/UserContext";
 import Home from './pages/PublicRoute/Home';
 import Profile from './pages/ProtectedRoute/Profile';
 import { StoreProvider } from "../src/components/utils/GlobalState";
-import CreateProfile from "../src/components/CreateProfile/profile";
+import CreateProfile from "./pages/ProtectedRoute/CreateProfile/profile";
 import Footer from "../src/components/Footer/footer";
 
 //Now we have all the stuff we need .. let's render some components with the Router
@@ -30,13 +31,13 @@ const AuthExample = () => (
 					<Nav className="App-header" />
 					{/* <Container> */}
 						<Switch>
-							<Route exact path ="/createprofile" component={CreateProfile} />
 							<Route exact path="/" component={Home} />
 							<Route path="/public" component={PublicRoute} />
 							<Route path="/login" component={Login} />
 							<Route path="/register" component={Register} />
 							<PrivateRoute path="/profilepage" component={ProtectedRoute} />
 							<Route exact path="/profile" component={Profile} />
+							<PrivateRoute exact path ="/createprofile" component={CreateProfile} />
 							{/* <Route component={NoMatch} /> */}
 						</Switch>
 					{/* </Container> */}
@@ -62,15 +63,9 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 				) : (
 						<div>
 							<div className="alert alert-danger text-center" role="alert">
-								This page is private to authenticated users.
+								This page is private, please sign up or login to gain access.
 					</div>
-							<div className="row">
-								<div className="col-sm"></div>
-								<div className="col-sm">
-									<h3>Please Register or Login</h3>
-								</div>
-								<div className="col-sm"></div>
-							</div>
+							
 							<Redirect to={{
 								pathname: '/login',
 								state: { from: props.location }
