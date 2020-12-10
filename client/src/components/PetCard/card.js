@@ -2,7 +2,6 @@ import { ListItem, List } from "../List";
 import DeleteBtn from "../DeleteBtn";
 import React from "react";
 import "./style.css";
-import { Link } from "react-router-dom";
 import { Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle } from "reactstrap";
 
 
