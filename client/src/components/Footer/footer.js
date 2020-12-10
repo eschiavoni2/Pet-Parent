@@ -4,7 +4,7 @@ import "./style.css";
 function Footer() {
     return (
         <div className="wrapper">
-        <div className="footer mt-4">
+        <div className="footer">
             <div className="container col-md-1">
                 <a className="petfinder" href="https://www.petfinder.com/" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-2x">&#xf1b0;</i>
