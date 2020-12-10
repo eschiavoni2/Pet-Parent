@@ -62,7 +62,7 @@ function Nav() {
         {user.username ? <span className="userText text-white ml-3 pt-1" to="#">Hi {user.username} !</span> : ""}
         <ul className="navbar-nav ml-auto">
           <li className="nav-item ">
-            <Link classname="home" to="/">Home</Link>
+            <Link classname="addpet" to="/createprofile">Add Pet</Link>
             <Link className="profile" to="/profilepage">Profile</Link>
             {user.username ? "" :
               <Link className="signup" to="/register">Sign Up</Link>

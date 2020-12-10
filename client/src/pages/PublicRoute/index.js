@@ -8,6 +8,7 @@ function PublicRoute() {
     return (
         <>
                     <Home />
+
         </>
     )
 }
