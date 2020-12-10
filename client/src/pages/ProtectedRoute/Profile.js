@@ -6,7 +6,7 @@ import { REMOVE_POST, UPDATE_POSTS, LOADING } from "../../components/utils/actio
 import API from "../../components/utils/API";
 import TodoApp from "../../components/TodoApp/todo";
 import "../style.css";
-import Jumbo from "../../components/Jumbo/jumbotron";
+import JumboProfile from "../../components/JumboProfile/jumboprofile";
 
 
 function Profile() {
@@ -44,7 +44,7 @@ function Profile() {
 
     return (
         <div>
-        <Jumbo />
+        <JumboProfile />
         <div className="container">
             <div className="row">
             <div className="col">

@@ -5,7 +5,6 @@ import "./style.css";
 import AuthButton from "../AuthButton";
 import {
   UncontrolledDropdown,
-  DropdownToggle,
   DropdownItem,
   DropdownMenu,
   NavLink,
