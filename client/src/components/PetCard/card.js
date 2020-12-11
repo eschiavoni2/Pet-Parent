@@ -17,20 +17,21 @@ function PetCard(props) {
                             <Card>
                             <CardImg src="../assets/images/pets.png" alt="placeholder" />
                             <CardBody>
-                                <CardTitle tag="h5">Pet Pal</CardTitle>
-                                <CardSubtitle tag="h6" className="mb-2 text-muted">
-                                        Name:
+                                <CardTitle tag="h3">Pet Pal</CardTitle>
+                                <br />
+                                <CardSubtitle tag="h5" className="mb-2">
+                                Name:
                                         {" "}
                                     {post.name}
                                     </CardSubtitle>
-                                <CardText>
-                                Age: {""} {post.age} {""}
-                                Gender: {""} {post.gender} {""}
-                                Species: {""} {post.species} {""}
-                                Breed: {""} {post.breed} {""}
-                                Microchip: {""} {post.microchip} {""}
-                                Weight: {""} {post.weight} {""}
-                                Location: {""} {post.location} {""}
+                                <CardText>    
+                                <h6>Age: {""} {post.age} {""}</h6>
+                                <h6>Gender: {""} {post.gender} {""}</h6>
+                                <h6>Species: {""} {post.species} {""}</h6>
+                                <h6>Breed: {""} {post.breed} {""}</h6>
+                                <h6>Microchip: {""} {post.microchip} {""}</h6>
+                                <h6>Weight: {""} {post.weight} {""}</h6>
+                                <h6>Location: {""} {post.location} {""}</h6>
                                 </CardText>
                         <DeleteBtn onClick={() => props.removePost(post._id)} />
                         </CardBody>
