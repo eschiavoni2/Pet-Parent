@@ -53,7 +53,7 @@ function Profile() {
                     <PetCard removePost={removePost} posts={state.posts} />
             </div>
             </div>
-            <div className="col">
+            <div className="col mb-5">
 
             <div>
                     <Expenses />
