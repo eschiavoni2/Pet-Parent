@@ -5,6 +5,7 @@ import ListExp from "../ListExp/list";
 import "./style.css";
 
 
+
 const ALL_EXPENSES = localStorage.getItem('expenses')
   ? JSON.parse(localStorage.getItem('expenses'))
   : []
