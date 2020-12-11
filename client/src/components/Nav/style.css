@@ -13,7 +13,7 @@
 }
 
 .navbar-brand {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Sacramento', cursive !important;
   font-size: 40px !important;
 }
 
