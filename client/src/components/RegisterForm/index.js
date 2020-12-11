@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { Container } from 'reactstrap';
 import Card from "../Card"
 
 // class RegisterForm extends React.Component {
@@ -9,6 +10,7 @@ function RegisterForm({ onRegister }) {
 	const passwordRef = useRef();
 
 	return (
+		<Container className="col-md-5 mt-5">
 		<Card title="Register a New User">
 			<form
 				ref={formRef}
@@ -27,6 +29,7 @@ function RegisterForm({ onRegister }) {
 				</div>
 			</form>
 		</Card>
+		</Container>
 	)
 }
 
