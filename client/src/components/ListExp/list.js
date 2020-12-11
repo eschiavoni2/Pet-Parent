@@ -10,7 +10,7 @@ const ListExp = ({ expenses }) => (
       {expenses.map(item => (
         <ListGroupItem key={item.id}>
           {item.name} - $ {item.amount} 
-          <DeleteBtn />
+          {/* <DeleteBtn /> */}
         </ListGroupItem>
       ))}
     </ListGroup>
