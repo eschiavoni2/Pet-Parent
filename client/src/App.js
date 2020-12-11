@@ -18,6 +18,7 @@ import Profile from './pages/ProtectedRoute/Profile';
 import { StoreProvider } from "../src/components/utils/GlobalState";
 import CreateProfile from "./pages/ProtectedRoute/CreateProfile/profile";
 import Footer from "../src/components/Footer/footer";
+import AboutUs from "../src/pages/PublicRoute/AboutUs";
 
 //Now we have all the stuff we need .. let's render some components with the Router
 const AuthExample = () => (
@@ -28,6 +29,7 @@ const AuthExample = () => (
 					<Nav className="App-header" />
 						<Switch>
 							<Route exact path="/" component={Home} />
+							<Route exact path="/aboutus" component={AboutUs} />
 							<Route path="/public" component={PublicRoute} />
 							<Route path="/login" component={Login} />
 							<Route path="/register" component={Register} />
