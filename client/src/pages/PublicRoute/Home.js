@@ -38,8 +38,8 @@ function Home() {
               <CardText className="text-exp">Current features include: Adding and expense, Deleting all expenses, Saving expenses to page after closing out of the page, Adding up total expenses. In the future we plan to add dates in order to track budget per month/per year.</CardText>
             </Card>
           </Col>
-          <Col>
-            <Card>
+          <Col className="mb-5">
+            <Card className="mb-5">
               <CardImg className="expT" top width="100%" src="/assets/images/exp.PNG" alt="Card image cap" />
               <CardBody>
                 <CardText className="todo-text2">This handy little app will help you keep track of what you spend on your pets. This information comes in handy for budgeting, and deciding on any new fur or feather kids in the future.</CardText>
