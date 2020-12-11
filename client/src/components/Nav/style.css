@@ -5,10 +5,16 @@
 
 .addpet, .signup, .profile, .logout {
   padding: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-nav {
   list-style-type: none;
+}
+
+.navbar-brand {
+  font-family: 'Sacramento', cursive;
+  font-size: 40px !important;
 }
 
 
