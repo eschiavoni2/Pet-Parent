@@ -8,6 +8,7 @@ import {
   DropdownItem,
   DropdownMenu,
   NavLink,
+  DropdownToggle
 } from 'reactstrap';
 import { UserContext } from "../../utils/UserContext";
 //I want to add some basic inline styling here, even though we are bringing in styles
@@ -45,24 +46,12 @@ function Nav() {
       <Link className="navbar-brand" to="/">
         Pet Pals
         </Link>
-        <UncontrolledDropdown nav inNavbar>
-              {/* <DropdownToggle nav caret> */}
-        {/* <i className="fas fa-bars"></i> */}
-        {/* </DropdownToggle> */}
-
-        <DropdownMenu right>
-                <DropdownItem>
-                <NavLink href="/createprofile">Profile Form</NavLink>
-                </DropdownItem>
-                </DropdownMenu>
-
-            </UncontrolledDropdown>
       <div className={`${open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
         {user.username ? <span className="userText text-white ml-3 pt-1" to="#">Hi {user.username} !</span> : ""}
         <ul className="navbar-nav ml-auto">
           <li className="nav-item ">
-            <Link classname="addpet" to="/createprofile">Add Pet</Link>
             <Link className="profile" to="/profilepage">Profile</Link>
+            <Link classname="addpet" to="/createprofile">Add Pet</Link>
             {user.username ? "" :
               <Link className="signup" to="/register">Sign Up</Link>
             }

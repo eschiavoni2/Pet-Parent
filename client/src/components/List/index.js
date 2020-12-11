@@ -12,5 +12,5 @@ export function List({ children }) {
 }
 
 export function ListItem({ children }) {
-  return <li>{children}</li>;
+  return <>{children}</>;
 }

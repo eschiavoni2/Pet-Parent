@@ -3,7 +3,7 @@
   height: 70px;
 }
 
-.home, .signup, .profile {
+.addpet, .signup, .profile, .logout {
   padding: 10px;
 }
 
