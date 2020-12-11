@@ -3,8 +3,7 @@ import {
 	BrowserRouter as Router,
 	Route,
 	Redirect,
-	Switch,
-	Link
+	Switch
 } from 'react-router-dom';
 import Auth from "./utils/Auth";
 import Nav from "./components/Nav";
