@@ -15,6 +15,7 @@ const AuthButton = () => {
 	return (
 		Auth.isAuthenticated ? (
 			<Link 
+				className="logout"
 				onClick={() => {
 					Auth.signout(() => history.push('/login'))
 					dispatch({
