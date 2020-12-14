@@ -58,7 +58,7 @@ function CreateProfile() {
   // Form and submit
   return (
     <Container>
-      <Card>
+      <Card className="mt-5">
           <h1 className="mt-3">Add your Pet</h1>
 
           <form className="form-group mt-5 mb-1" onSubmit={handleSubmit}>

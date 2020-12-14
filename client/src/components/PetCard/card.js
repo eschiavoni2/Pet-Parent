@@ -2,7 +2,7 @@ import { ListItem, List } from "../List";
 import DeleteBtn from "../DeleteBtn";
 import React from "react";
 import "./style.css";
-import { Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle } from "reactstrap";
+import { Card, CardBody, CardImg, CardSubtitle, CardText } from "reactstrap";
 
 
 function PetCard(props) {
@@ -15,7 +15,7 @@ function PetCard(props) {
                 {props.posts.map(post => (
                     <ListItem key={post._id}>
                             <Card>
-                            <CardImg src="../assets/images/pets.png" alt="placeholder" />
+                            <CardImg src="../assets/images/pets1.jpg" alt="placeholder" />
                             <CardBody>
                                 {/* <CardTitle id="petPalTitle" tag="h3">Pet Pal</CardTitle> */}
                                 {/* <br /> */}
