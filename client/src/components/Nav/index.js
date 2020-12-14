@@ -41,7 +41,7 @@ function Nav() {
         <ul className="navbar-nav ml-auto">
           <li className="nav-item ">
             <Link className="profile" to="/profilepage">Profile</Link>
-            <Link classname="addpet" to="/createprofile">Add Pet</Link>
+            <Link className="addpet" to="/createprofile">Add Pet</Link>
             {user.username ? "" :
               <Link className="signup" to="/register">Sign Up</Link>
             }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap';
+import { Container, Row, Col, Card, CardImg } from 'reactstrap';
 import Jumbo from "../../components/Jumbo/jumbotron";
 import "../../pages/style.css"
 
@@ -7,29 +7,26 @@ function Home() {
   return (
     <div>
       <Jumbo />
-      <Container>
+      <Container className="mb-5">
         <Row lg="2">
           <Col>
-            <Card>
-              <CardImg className="img-1" top width="100%" src="/assets/images/Todo.PNG" alt="Card image cap" />
-              <CardBody>
-                <CardText className="todo-text1">Help yourself stay on top of daily tasks. Keep track of your walks, feedings, and more!</CardText>
-              </CardBody>
+            <Card className="mb-5">
+              <CardImg className="img-1" top width="100%" src="/assets/images/profile.PNG" alt="Card image cap" />
+              {/* <CardBody>
+                <CardText className="todo-text1">Create a Pet Profile</CardText>
+              </CardBody> */}
             </Card>
           </Col>
           <Col>
-            <Card className="card-2" inverse>
-              <CardTitle tag="h5" className="todo-1">To Do List</CardTitle>
-              <CardImg className="card2-img" top width="100%" src="/assets/images/Todo1.PNG" alt="Card image cap" />
-              <CardBody>
-                <hr />
-                <CardText className="todo-text">This handy to do list is currently capable of: Adding a todo, Checking off a todo (just click to cross it out), Updating a todo, and Deleting a todo. In the future we hope to save it to the page, and track dates with list items. New features coming soon!
-          </CardText>
-              </CardBody>
+            <Card className="mb-5">
+              <CardImg className="img-1" top width="100%" src="/assets/images/expense.PNG" alt="Card image cap" />
+              {/* <CardBody>
+                <CardText className="todo-text1">Create a Pet Profile</CardText>
+              </CardBody> */}
             </Card>
           </Col>
         </Row>
-        <Row lg="2">
+        {/* <Row lg="2">
           <Col>
             <Card inverse>
               <CardTitle tag="h5" className="exp1-title">Expense Tracker</CardTitle>
@@ -46,7 +43,7 @@ function Home() {
               </CardBody>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </div>
   );
