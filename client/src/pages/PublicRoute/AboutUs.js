@@ -11,12 +11,12 @@ function AboutUs() {
             <Row>
                 <Col>
                     <Card>
-                        <CardImg className="img-1" top width="200px" src="/assets/images/Erika.JPG" alt="This is Erika" />
+                        <CardImg className="img-1" width="200px" src="/assets/images/Charlie.jpg" alt="This is Erika" />
                         <CardBody>
                             <CardText>
-                                Erika 
+                                Erika is a former vet tech that knows how important fur and feather babies are to their parents, which is what inspired this web app. When she isn't coding she is walking her dog, doing yoga or hanging out with friends.
                             </CardText>
-                            <a href="https://github.com/eschiavoni2">Erika's Github is here.</a>
+                            <a className="color1" href="https://github.com/eschiavoni2">Click here for Erika's Github</a>
                         </CardBody>
                     </Card>
                 </Col>
@@ -27,7 +27,7 @@ function AboutUs() {
                             <CardText>
                                 Ben Brumby lives in Orlando with his wife, Mandy, and their two sons, William and Nathan. When he's not coding, he enjoys jogging and playing with his pitbull, April.
                             </CardText>
-                            <a href="https://github.com/DrunkOnMystery">Ben's Github is here.</a>
+                            <a className="color2" href="https://github.com/DrunkOnMystery">Click here for Ben's Github</a>
                         </CardBody>
                     </Card>
                 </Col>
