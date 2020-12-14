@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { ListGroup, ListGroupItem } from "reactstrap";
-import DeleteBtn from "../DeleteBtn/index";
+// import DeleteBtn from "../DeleteBtn/index";
 
 // listing expenses from the expense array
 const ListExp = ({ expenses }) => (

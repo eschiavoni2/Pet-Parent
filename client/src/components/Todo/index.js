@@ -28,7 +28,7 @@ function Todo({todos, completeTodo, removeTodo, updateTodo }) {
                 {todo.text}
             </div>
             <div className="icons">
-            <i className="far fa-times-circle delete-icon" 
+            <i className="fa fa-times-circle delete-icon" 
             onClick={() =>  removeTodo(todo.id)}
             ></i>
             <i className="far fa-edit edit-icon"
