@@ -5,24 +5,39 @@ html {
 
 /* Footer */
 .footer {
-    height: 60px;
+    height: 40px;
     text-align: center;
     position: fixed;
     width:100%;
     display: block;
     bottom: 0 !important;
-    padding: 20px;
-    line-height: 60px;
-    height: 60px;
+    padding: 10px;
+    line-height: 20px;
+    background: linear-gradient(
+        90deg,
+        #04D9D9 0%,
+        #3B0273 100%
+        
+      );
 }
+
+#aboutUs {
+    color: white;
+}
+
+
+
+
 .abtUs {
     color: white;
     z-index: 1;
     padding: 10px;
 }
 .abtUs:hover {
+
     color:  #ecd7fd;
 }
+
 .wrapper {
     min-height: 100%;
     height: auto !important;
