@@ -17,21 +17,21 @@ function PetCard(props) {
                             <Card>
                             <CardImg src="../assets/images/pets.png" alt="placeholder" />
                             <CardBody>
-                                <CardTitle tag="h3">Pet Pal</CardTitle>
+                                <CardTitle id="petPalTitle" tag="h3">Pet Pal</CardTitle>
                                 <br />
-                                <CardSubtitle tag="h5" className="mb-2">
+                                <CardSubtitle id="petPalName" tag="h5" className="mb-2">
                                 Name:
                                         {" "}
                                     {post.name}
                                     </CardSubtitle>
                                 <CardText>    
-                                <h6>Age: {""} {post.age} {""}</h6>
-                                <h6>Gender: {""} {post.gender} {""}</h6>
-                                <h6>Species: {""} {post.species} {""}</h6>
-                                <h6>Breed: {""} {post.breed} {""}</h6>
-                                <h6>Microchip: {""} {post.microchip} {""}</h6>
-                                <h6>Weight: {""} {post.weight} {""}</h6>
-                                <h6>Location: {""} {post.location} {""}</h6>
+                                <h6 className="petAttributes">Age: {""} {post.age} {""}</h6>
+                                <h6 className="petAttributes">Gender: {""} {post.gender} {""}</h6>
+                                <h6 className="petAttributes">Species: {""} {post.species} {""}</h6>
+                                <h6 className="petAttributes">Breed: {""} {post.breed} {""}</h6>
+                                <h6 className="petAttributes">Microchip: {""} {post.microchip} {""}</h6>
+                                <h6 className="petAttributes">Weight: {""} {post.weight} {""}</h6>
+                                <h6 className="petAttributes">Location: {""} {post.location} {""}</h6>
                                 </CardText>
                         <DeleteBtn onClick={() => props.removePost(post._id)} />
                         </CardBody>

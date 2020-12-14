@@ -18,7 +18,7 @@ const Form = ({ name, amount, handleName, handleAmount, handleSubmitForm, handle
         Expense
       </Label>
       <Col md={6}>
-        <Input
+        <Input className="expenseInput"
           type="text"
           name="name"
           id="expenseName"
@@ -33,7 +33,7 @@ const Form = ({ name, amount, handleName, handleAmount, handleSubmitForm, handle
         $ Amount
       </Label>
       <Col md={6}>
-        <Input
+        <Input className="expenseInput"
           type="number"
           name="amount"
           id="expenseAmount"

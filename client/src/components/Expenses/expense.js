@@ -68,7 +68,7 @@ function Expenses() {
                         </span>
                     </p>
                 </div>
-                <Form
+                <Form  className="expenseInput"
                     name={name}
                     amount={amount}
                     handleName={handleName}
