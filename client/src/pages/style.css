@@ -1,5 +1,10 @@
 .card, .card-body {
     margin-bottom: 25px;
+    border-radius: 0 !important;
+}
+
+.card {
+    border: thin black solid !important;
 }
 
 .todo-text, .todo-1, .todo-text1, .todo-text2, .exp1-title, .text-exp {
@@ -12,10 +17,6 @@
 
 .exp1-title {
     text-align: center;
-}
-
-.img-1, .exp2-img {
-    margin-top: 13px;
 }
 
 .todo-1 {
@@ -45,4 +46,34 @@
 
 .abt {
     margin-bottom: 7rem !important;
+}
+
+.color1, .color2, .color3, .color4 {
+    color: black !important;
+    justify-content: center !important;
+    display: flex;
+}
+
+.color1:hover {
+    color: #04D9D9 !important;
+}
+
+.color2:hover {
+    color: #04D9D9 !important;
+}
+
+.color3:hover {
+    color: #04D9D9 !important;
+}
+
+.color4:hover {
+    color: #04D9D9 !important;
+}
+
+.text1, .text2, .abtUs {
+    text-align: center !important;
+}
+
+.fa {
+    z-index: 1 !important;
 }

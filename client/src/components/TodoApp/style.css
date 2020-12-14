@@ -23,8 +23,8 @@ body {
   /* background: #161a2b; */
   text-align: center;
   margin: 40px auto;
-  border-radius: 10px;
   padding-bottom: 32px;
+  border: thin black solid
 }
 
 h1 {
