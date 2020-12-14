@@ -6,7 +6,7 @@ function Footer() {
         <div className="wrapper">
         <div className="footer">
             <div className="container col-md-1">
-                <a href="/aboutus">About Us</a>
+                <a className="abtUs" href="/aboutus">About Us</a>           
             </div>
         </div>
         </div>
