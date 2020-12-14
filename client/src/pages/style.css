@@ -19,10 +19,6 @@
     text-align: center;
 }
 
-.img-1, .exp2-img {
-    margin-top: 13px;
-}
-
 .todo-1 {
     text-align: center;
     margin-bottom: 30px !important;
@@ -52,6 +48,32 @@
     margin-bottom: 7rem !important;
 }
 
-.color1, .color2 {
+.color1, .color2, .color3, .color4 {
     color: black !important;
+    justify-content: center !important;
+    display: flex;
+}
+
+.color1:hover {
+    color: #04D9D9 !important;
+}
+
+.color2:hover {
+    color: #04D9D9 !important;
+}
+
+.color3:hover {
+    color: #04D9D9 !important;
+}
+
+.color4:hover {
+    color: #04D9D9 !important;
+}
+
+.text1, .text2, .abtUs {
+    text-align: center !important;
+}
+
+.fa {
+    z-index: 1 !important;
 }

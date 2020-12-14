@@ -35,15 +35,12 @@
 }
 
 .petAttributes {
-    color: blueviolet;
+    text-align: center;
 }
 
-#petPalName {
+#petPalName, #petPalTitle {
     color: #04D9D9;
     font-weight: bolder;
+    text-align: center;
 }
 
-#petPalTitle {
-    color: #04D9D9;
-    font-weight: bolder;
-}
