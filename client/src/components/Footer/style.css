@@ -25,13 +25,16 @@ html {
     color: white;
 }
 
-.petfinder, .adoptapet {
-    color: #ddb4ff;
+
+
+
+.abtUs {
+    color: white;
     z-index: 1;
     padding: 10px;
 }
+.abtUs:hover {
 
-.fa-2x:hover {
     color:  #ecd7fd;
 }
 

@@ -3,18 +3,8 @@ import { Link } from "react-router-dom";
 import "./style.css";
 // import Login from "../LoginForm";
 import AuthButton from "../AuthButton";
-import {
-  UncontrolledDropdown,
-  DropdownItem,
-  DropdownMenu,
-  NavLink,
-  DropdownToggle
-} from 'reactstrap';
 import { UserContext } from "../../utils/UserContext";
 //I want to add some basic inline styling here, even though we are bringing in styles
-const buttonStyle = {
-  marginRight: 10
-};
 
 function Nav() {
 

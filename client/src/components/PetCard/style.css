@@ -34,3 +34,16 @@
     text-align: center;
 }
 
+.petAttributes {
+    color: blueviolet;
+}
+
+#petPalName {
+    color: #04D9D9;
+    font-weight: bolder;
+}
+
+#petPalTitle {
+    color: #04D9D9;
+    font-weight: bolder;
+}
