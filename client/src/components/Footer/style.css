@@ -15,12 +15,12 @@ html {
     line-height: 60px;
     height: 60px;
 }
-.petfinder, .adoptapet {
-    color: #ddb4ff;
+.abtUs {
+    color: white;
     z-index: 1;
     padding: 10px;
 }
-.fa-2x:hover {
+.abtUs:hover {
     color:  #ecd7fd;
 }
 .wrapper {

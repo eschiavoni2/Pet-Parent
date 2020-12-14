@@ -1,43 +1,93 @@
-# M.E.R.N. Authentication Boilerplate
-Full Stack Project starter with basic components routes and authentication. The project is in MVC format that includes the User model and controller. The first routes in the client are protected by the passport authentication using the local strategy. 
-
-## Purpose and Inspiration
-You can fork and run this to quickly have an MVC project up and running, then simply add the controllers models and components that your project needs. I wanted to have a place to start with no other models than the User model. This is currently at the point where you can:
-
-- Register a new user
-- Login with an existing user
-- Log Out
-*(You are not able to navigate to client side routes that are protected by authentication)*
+# Pet Pals
 
 
-## MVC
-This project is structured in Full Stack Javascript with Mongoose Models REACT Views and Controllers. The heavy lifting for the authentication is done in src/utils/Auth.js.
+**[Deployment]()**
+**[Repo](https://github.com/eschiavoni2/Project3)**
 
 
-## Tech Stack
-+ [MONGOOSE ORM](https://www.npmjs.com/package/mongoose)
-+ [EXPRESS](https://www.npmjs.com/package/express)
-+ [REACT](https://reactjs.org/)
-+ [NODE](https://nodejs.org/en/)
-+ [PASSPORT](http://www.passportjs.org/docs/username-password/)
+## Description
 
-#### Install and run
-Install all the dependencies with Yarn or NPM
-`yarn install` <br>
-Make sure you start Mongod and have mongoDB running..
-`mongod` <br>
-Then start the project
-`yarn start
-## Basic Nav on Homepage
-![Register A New User](/client/public/images/home_shot.png)
+Pet Pals allows you to track your pets. From budget to to-dos, this handy app will keep you on track with your furry or feathered friends.
 
-## Register a New User
-![Register A New User](/client/public/images/register_shot.png)
+This application was inspired by our love for pets, and Erika's experience as a Veterinary Technician.
 
-## Login the new user
-![Register A New User](/client/public/images/login_shot.png)
+## Table of Contents
 
-## Routes are protected from Users that are not logged in
-![Login an existing User](/client/public/images/protected_shot.png)
+- [Technologies](#Technologies)
+- [Images](#images)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Motivation](#motivation)
+- [License](#license)
+- [Contributing](#contributing)
+- [Questions](#tests)
 
+## Technologies
 
+**STACK:**
+
+- _MongoDB_
+- _Express_
+- _React_
+- _Redux_
+- _Node_
+
+**CSS**
+
+- _Reactstrap:_ https://reactstrap.github.io/
+- _Bootstrap_ 
+
+## Images
+
+- Homepage:
+  ![Home]()
+
+- Profile:
+  ![Profile]()
+
+- About:
+  ![About]()
+
+- Login
+  ![Login]()
+
+- Signup
+  ![Signup]()
+
+- Add Pet
+  ![Add Pet]()
+
+## Installation
+
+```
+git clone git@github.com:eschiavoni2/Project3.git
+```
+- npm i
+- npm start
+
+## Usage
+
+This application allows you to add a pet to your profile (or several), track your spending, and monitor your to-do list. In the future we are hoping to add logging technology to allow the user to track vet appointments, feeding, and more.
+
+## Motivation
+
+We love our pets, and we know every pet parent wants to do the most for their family member. Being able to track spending and staying organize can help improve the quality of life while making decisions to add new family members even easier. 
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please make sure to update tests as appropriate.
+
+## Questions
+
+If you would like to learn more, feel free to reach out via our GitHub or LinkedIn pages below:
+
+Erika Zibelnik:
+
+- [GitHub](https://github.com/eschiavoni2)
+- [LinkedIn](https://www.linkedin.com/in/erika-zibelnik-5ab715a4/)
+
+Ben Brumby:
+
+- [GitHub](https://github.com/DrunkOnMystery)
+- [LinkedIn](https://www.linkedin.com/in/benjamin-brumby-98183546/)

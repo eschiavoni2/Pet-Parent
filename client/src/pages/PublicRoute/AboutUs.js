@@ -1,8 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Card, CardBody, CardText, CardImg } from 'reactstrap';
+import JumboProfile from '../../components/JumboProfile/jumboprofile';
+import '../style.css';
 
 function AboutUs() {
     return (
+        <div className="abt">
+        <JumboProfile />
         <Container>
             <Row>
                 <Col>
@@ -10,7 +14,7 @@ function AboutUs() {
                         <CardImg className="img-1" top width="200px" src="/assets/images/Erika.JPG" alt="This is Erika" />
                         <CardBody>
                             <CardText>
-                                Erika is extremely sus, and is almost certainly an imposter. Vote Erika.
+                                Erika 
                             </CardText>
                             <a href="https://github.com/eschiavoni2">Erika's Github is here.</a>
                         </CardBody>
@@ -29,6 +33,7 @@ function AboutUs() {
                 </Col>
             </Row>
         </Container>
+        </div>
     )
 }
 
