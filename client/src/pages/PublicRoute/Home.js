@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, CardImg, CardBody, CardText } from 'reactstrap';
 import Jumbo from "../../components/Jumbo/jumbotron";
+import JumboLowProfile from "../../components/JumboLowerProfile/jumbolowprofile";
 import "../../pages/style.css"
 
 function Home() {
