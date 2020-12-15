@@ -24,6 +24,12 @@ This application was inspired by our love for pets, and Erika's experience as a 
 
 ## Technologies
 
+**Languages:**
+
+<img float="left" alt="JavaScript badge" src="https://img.shields.io/badge/JavaScript-97%25-yellow">
+<img float="left" alt="HTML badge" src="https://img.shields.io/badge/HTML-2%25-orange">
+<img float="left" alt="CSS badge" src="https://img.shields.io/badge/CSS-1%25-blueviolet">
+
 **STACK:**
 
 - _MongoDB_
@@ -40,22 +46,22 @@ This application was inspired by our love for pets, and Erika's experience as a 
 ## Images
 
 - Homepage:
-  <img src="./client/public/assets/images/home.PNG" alt="home">
+  <img src="./client/public/assets/images/home.PNG" alt="Home">
 
 - Profile:
-  ![Profile]()
+  <img src="./client/public/assets/images/profpage.PNG" alt="Profile page">
 
 - About:
-  ![About]()
+  <img src="./client/public/assets/images/about.PNG" alt="About">
 
 - Login
-  ![Login]()
+  <img src="./client/public/assets/images/login.PNG" alt="Login">
 
 - Signup
-  ![Signup]()
+  <img src="./client/public/assets/images/signup.PNG" alt="Sign up">
 
 - Add Pet
-  ![Add Pet]()
+  <img src="./client/public/assets/images/addpet.PNG" alt="Add Pet">
 
 ## Installation
 
