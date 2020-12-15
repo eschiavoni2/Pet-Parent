@@ -40,7 +40,7 @@ This application was inspired by our love for pets, and Erika's experience as a 
 ## Images
 
 - Homepage:
-  ![Home](/images/home.PNG)
+  ![Home](/assets/images/home.PNG)
 
 - Profile:
   ![Profile]()
