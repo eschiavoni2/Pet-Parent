@@ -1,0 +1,19 @@
+.display-4 {
+    text-align: left;
+    color: white;
+}
+
+#jumbo-1 {
+    background-image: url("/assets/images/dogfamily.png") !important;
+    font-family: 'Montserrat', sans-serif !important;
+    background-size: cover;
+    width: 100% !important;
+    background-position: center bottom;
+    min-height: 400px;
+    border: thin black solid !important;
+}
+
+.color {
+    background-color: #cfcbd1;
+    width: 100%;
+}

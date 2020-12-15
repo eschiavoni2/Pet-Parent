@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, CardImg } from 'reactstrap';
 import Jumbo from "../../components/Jumbo/jumbotron";
+import JumboLowProfile from "../../components/JumboLowerProfile/jumbolowprofile";
 import "../../pages/style.css"
 
 function Home() {
@@ -24,6 +25,11 @@ function Home() {
                 <CardText className="todo-text1">Create a Pet Profile</CardText>
               </CardBody> */}
             </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <JumboLowProfile />
           </Col>
         </Row>
         {/* <Row lg="2">
