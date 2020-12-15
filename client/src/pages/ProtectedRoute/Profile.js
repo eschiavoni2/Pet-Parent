@@ -7,6 +7,7 @@ import API from "../../components/utils/API";
 import TodoApp from "../../components/TodoApp/todo";
 import "../style.css";
 import JumboProfile from "../../components/JumboProfile/jumboprofile";
+import JumboLowProfile from "../../components/JumboLowerProfile/jumbolowprofile";
 
 
 function Profile() {
@@ -24,7 +25,7 @@ function Profile() {
             .catch(err => console.log(err));
     };
 
-    
+
 
     useEffect(() => {
         const getProfiles = () => {
@@ -44,24 +45,24 @@ function Profile() {
 
     return (
         <div>
-        <JumboProfile />
-        <div className="container">
-            <div className="row">
-            <div className="col">
+            <JumboProfile />
+            <div className="container">
+                <div className="row">
+                    <div className="col">
 
-            <div>
-                    <PetCard removePost={removePost} posts={state.posts} />
-            </div>
-            </div>
-            <div className="col mb-5">
+                        <div>
+                            <PetCard removePost={removePost} posts={state.posts} />
+                        </div>
+                    </div>
+                    <div className="col mb-5">
 
-            <div>
-                    <Expenses />
-                    <TodoApp />
-            </div>        
+                        <div>
+                            <Expenses />
+                            <TodoApp />
+                        </div>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </div>
     );
 };
