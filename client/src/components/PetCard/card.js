@@ -26,13 +26,13 @@ function PetCard(props) {
                                     </CardSubtitle>
                                     <br />
                                 <CardText>    
-                                <p className="petAttributes">Age: {""} {post.age} {""}</p>
-                                <p className="petAttributes">Gender: {""} {post.gender} {""}</p>
-                                <p className="petAttributes">Species: {""} {post.species} {""}</p>
-                                <p className="petAttributes">Breed: {""} {post.breed} {""}</p>
-                                <p className="petAttributes">Microchip: {""} {post.microchip} {""}</p>
-                                <p className="petAttributes">Weight: {""} {post.weight} {""}</p>
-                                <p className="petAttributes">Location: {""} {post.location} {""}</p>
+                                <h6 className="petAttributes">Age: {""} {post.age} {""}</h6>
+                                <h6 className="petAttributes">Gender: {""} {post.gender} {""}</h6>
+                                <h6 className="petAttributes">Species: {""} {post.species} {""}</h6>
+                                <h6 className="petAttributes">Breed: {""} {post.breed} {""}</h6>
+                                <h6 className="petAttributes">Microchip: {""} {post.microchip} {""}</h6>
+                                <h6 className="petAttributes">Weight: {""} {post.weight} {""}</h6>
+                                <h6 className="petAttributes">Location: {""} {post.location} {""}</h6>
                                 </CardText>
                                 <br />
                         <DeleteBtn onClick={() => props.removePost(post._id)} />

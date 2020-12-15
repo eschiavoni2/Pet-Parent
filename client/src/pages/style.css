@@ -77,3 +77,19 @@
 .fa {
     z-index: 1 !important;
 }
+
+.todo-text1 {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    overflow-wrap: break-all;
+    hyphens: auto;
+}
+
+.mb-5, .cards {
+    margin-bottom: 12rem !important;
+}
+
+.petPals1 {
+    text-align: center;
+}
