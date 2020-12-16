@@ -71,13 +71,15 @@ app.use(function (err, req, res, next) {
 });
 
 // Connect to Mongo DB
-// mongoose.connect(
-//   process.env.MONGODB_URI || "mongodb://localhost/pets",
-//   {
-//     useCreateIndex: true,
-//     useNewUrlParser: true
-//   }
-// );
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/mern_authenticate_me",
+  {
+       useNewUrlParser: true,
+       useUnifiedTopology: true,
+       useCreateIndex: true,
+       useFindAndModify: false
+  }
+);
 
 /* === Server-Side Authentication w/passport.js on our Model === */
 const Account = require('./models/account');
