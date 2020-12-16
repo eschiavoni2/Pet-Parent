@@ -18,7 +18,6 @@ This application was inspired by our love for pets, and Erika's experience as a 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Motivation](#motivation)
-- [License](#license)
 - [Contributing](#contributing)
 - [Questions](#tests)
 
