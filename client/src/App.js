@@ -59,8 +59,8 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 					<Component {...props} />
 				) : (
 						<div>
-							<div className="alert alert-danger text-center" role="alert">
-								This page is private, please sign up or login to gain access.
+							<div className="alert alert-secondary text-center mt-5" role="alert">
+								Please login or signup.
 					</div>
 							
 							<Redirect to={{
