@@ -1,6 +1,7 @@
-#loginP {
+#loginP, strong {
     justify-content: center;
     display: flex;
+    color: #04D9D9 !important;
 }
 
 .card-header{
