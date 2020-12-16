@@ -70,6 +70,10 @@ app.use(function (err, req, res, next) {
   });
 });
 
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
+
 // Connect to Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/mern_authenticate_me",
