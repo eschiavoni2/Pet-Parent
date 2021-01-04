@@ -28,7 +28,7 @@ function AboutUs() {
                         <CardImg className="img-1" width="200px" src="https://hosting.photobucket.com/images/i/DrunkOnMystery/Ben_and_Mandy(1).jpg" alt="Ben and his wife, Mandy" />
                         <CardBody>
                             <CardText className="text2">
-                                Ben Brumby lives in Orlando with his wife, Mandy, and their two sons, William and Nathan. When he's not coding, he enjoys jogging and playing with his pitbull, April.
+                                Ben Brumby lives in Orlando with his wife, Mandy, and their two sons, William and Nathan. When he's not coding, he enjoys jogging and playing with his pit bull, April.
                             </CardText>
                             <a className="color2" href="https://github.com/DrunkOnMystery">
                                 Github
