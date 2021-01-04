@@ -25,7 +25,7 @@ function AboutUs() {
                 </Col>
                 <Col>
                     <Card>
-                        <CardImg className="img-1" top width="200px" src="/assets/images/Ben_and_Mandy.JPG" alt="Ben and his wife, Mandy" />
+                        <CardImg className="img-1" top width="200px" src="/assets/images/Ben_and_Mandy.jpg" alt="Ben and his wife, Mandy" />
                         <CardBody>
                             <CardText className="text2">
                                 Ben Brumby lives in Orlando with his wife, Mandy, and their two sons, William and Nathan. When he's not coding, he enjoys jogging and playing with his pitbull, April.
